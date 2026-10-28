@@ -25,6 +25,14 @@ dsh --profile web
 
 发布到 npm 或 Git 仓库后，市场索引可指向固定版本或固定提交。当前 Harness 的自定义市场是实验功能：在 **插件 → 更多 → 实验性插件 → 自定义插件市场** 启用，再在“发现”页添加市场索引地址。没有默认的官方市场或统一上架入口。
 
+本仓库的索引地址：
+
+```text
+https://raw.githubusercontent.com/shipianl/emoflow-harness-ui/main/market-index.json
+```
+
+在“发现 → 添加索引源”填入该地址后，搜索 **EmoFlow** 并确认安装。索引把 `v0.1.0` 固定到发布提交，避免后续更新 `main` 时悄悄改变已发布版本。
+
 ## 能力边界
 
 - 情绪感知是本地关键词快通道；复杂语义和反讽可能识别不准。
