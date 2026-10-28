@@ -31,6 +31,12 @@ dsh --profile web
 https://raw.githubusercontent.com/shipianl/emoflow-harness-ui/main/market-index.json
 ```
 
+国内网络下可用镜像地址（内容相同，CDN 缓存约 12 小时）：
+
+```text
+https://cdn.jsdelivr.net/gh/shipianl/emoflow-harness-ui@main/market-index.json
+```
+
 在“发现 → 添加索引源”填入该地址后，搜索 **EmoFlow** 并确认安装。索引把 `v0.1.0` 固定到发布提交，避免后续更新 `main` 时悄悄改变已发布版本。
 
 ## 能力边界
