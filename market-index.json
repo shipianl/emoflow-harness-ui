@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "title": {
+    "en": "EmoFlow Plugin Index",
+    "zh": "EmoFlow 插件索引"
+  },
+  "description": {
+    "en": "Official releases from shipianl",
+    "zh": "shipianl 发布的 EmoFlow 插件"
+  },
+  "plugins": [
+    {
+      "name": "emoflow-harness-ui",
+      "title": {
+        "en": "EmoFlow Emotion Companion",
+        "zh": "EmoFlow 情绪陪伴"
+      },
+      "description": {
+        "en": "Local emotion trajectory and response guidance for DeepSeek Harness.",
+        "zh": "在 DeepSeek Harness 中展示本地情绪轨迹，并为回复提供语气与策略辅助。"
+      },
+      "icon": "icon.svg",
+      "author": "shipianl",
+      "homepage": "https://github.com/shipianl/emoflow-harness-ui#readme",
+      "repository": {
+        "url": "https://github.com/shipianl/emoflow-harness-ui"
+      },
+      "keywords": ["emotion", "trajectory", "EmoFlow"],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793183517,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/shipianl/emoflow-harness-ui",
+            "commit": "d47f1b553f35608e6b4529102dd76ec5e59f7ad4"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}
