@@ -1,0 +1,8 @@
+.harness-node/
+node_modules/
+__pycache__/
+*.pyc
+*.tgz
+.env
+.env.*
+*.log

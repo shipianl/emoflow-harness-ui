@@ -1,0 +1,37 @@
+{
+  "name": "emoflow-harness-ui",
+  "version": "0.1.0",
+  "description": "EmoFlow emotion trajectory and response guidance for DeepSeek Harness",
+  "author": "shipianl",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shipianl/emoflow-harness-ui.git"
+  },
+  "homepage": "https://github.com/shipianl/emoflow-harness-ui#readme",
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": ["index.js", "client.js", "cordis.patch.yml", "python/*.py", "locale/*.json", "icon.svg", "README.md", "LICENSE.md"],
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "keywords": ["deepseek-harness", "dsh-plugin", "emotion", "EmoFlow"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  }
+}
